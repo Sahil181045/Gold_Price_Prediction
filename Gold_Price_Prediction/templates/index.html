@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold & Silver Price Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a style="color: chartreuse;" class="navbar-brand" href="#">Gold & Silver Price Prediction System</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+    <br><br>
+
+    <h1 style="text-align: center;">Gold Price Prediction</h1>
+
+    <div class="gold_input-container" style="border-style: solid;border-radius: 10px; margin-left: 20%;margin-right: 20%;">
+        <form method="post" action="/display_gold" >
+            <br>
+            <h4 style="text-align: center;"><label  for="spx value">Enter SPX Value:</label></h4>
+            <input type="text" style="margin-left: 37%;" name="SPX" id="SPX">
+            <br><br>
+            <h4 style="text-align: center;"><label  for="uso value">Enter USO Value:</label></h4>
+            <input type="text" style="margin-left: 37%;" name="USO" id="USO">
+            <br><br>
+            <h4 style="text-align: center;"><label  for="SLV value">Enter SLV Value:</label></h4>
+            <input type="text" style="margin-left: 37%;" name="SLV" id="SLV">
+            <br><br>
+            <h4 style="text-align: center;"><label  for="EUR/USD value">Enter EUR/USD Value:</label></h4>
+            <input type="text" style="margin-left: 37%;" name="EUR_USD" id="EUR_USD">
+            <br><br>
+
+            <input type="submit" value="Submit" style="margin-left: 45%;">
+            <br><br>
+        </form>
+
+    </div>
+    
+    <br><br>
+
+    <h1 style="text-align: center;">Silver Price Prediction</h1>
+
+    <div class="gold_input-container" style="border-style: solid;border-radius: 10px; margin-left: 20%;margin-right: 20%;">
+        <form action="/display_silver" method="post">
+            <br>
+            <h4 style="text-align: center;"><label  for="spx value">Enter SPX Value:</label></h4>
+            <input type="text" style="margin-left: 37%;" name="SPX" id="SPX">
+            <br><br>
+            <h4 style="text-align: center;"><label  for="gld value">Enter GLD Value:</label></h4>
+            <input type="text" style="margin-left: 37%;" name="GLD" id="GLD">
+            <br><br>
+            <h4 style="text-align: center;"><label  for="USO value">Enter USO Value:</label></h4>
+            <input type="text" style="margin-left: 37%;" name="USO" id="USO">
+            <br><br>
+            <h4 style="text-align: center;"><label  for="EUR/USD value">Enter EUR/USD Value:</label></h4>
+            <input type="text" style="margin-left: 37%;" name="EUR_USD" id="EUR_USD">
+            <br><br>
+
+            <input type="submit" value="Submit" style="margin-left: 45%;">
+            <br><br>
+        </form>
+    </div>
+
+    <br><br>
+    
+</body>
+</html>
